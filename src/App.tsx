@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Stack from "./components/Stack";
+import Contact from "./components/Contact";
 
 export default function App() {
 	useEffect(() => {
@@ -25,6 +27,8 @@ export default function App() {
 				<Hero />
 				<About />
 				<Projects />
+				<Stack />
+				<Contact />
 			</main>
 		</>
 	);
