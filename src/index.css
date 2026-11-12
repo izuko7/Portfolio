@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+	--color-ink: #090909;
+	--color-surface: #131316;
+	--color-paper: #edebe6;
+	--color-mute: #8b8b93;
+	--color-accent: #747bee;
+	--font-display: "Bricolage Grotesque", sans-serif;
+	--font-body: "Instrument Sans", sans-serif;
+}
+
+html {
+	scroll-behavior: auto;
+}
+
+body {
+	background: var(--color-ink);
+	color: var(--color-paper);
+	font-family: var(--font-body);
+}
+
+.glass {
+	background: linear-gradient(
+		145deg,
+		rgba(255, 255, 255, 0.11),
+		rgba(255, 255, 255, 0.02) 60%
+	);
+	border: 1px solid rgba(255, 255, 255, 0.13);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+	backdrop-filter: blur(18px);
+}
+
+:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
